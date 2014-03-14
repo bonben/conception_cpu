@@ -69,47 +69,6 @@ architecture Behavioral of CPU_8bits is
       );
   end component;
 
-  --component Control_Unit
-  --  port (Clk            : in  std_logic;
-  --        Ce             : in  std_logic;
-  --        Reset          : in  std_logic;
-  --        Carry          : in  std_logic;
-  --        Data_In        : in  std_logic_vector (7 downto 0);
-  --        Adr            : out std_logic_vector (5 downto 0);
-  --        Clear_Carry    : out std_logic;
-  --        Enable_Mem     : out std_logic;
-  --        Load_Reg1      : out std_logic;
-  --        Load_Reg_Accu  : out std_logic;
-  --        Load_Reg_Carry : out std_logic;
-  --        Sel_UAL        : out std_logic;
-  --        W_Mem          : out std_logic);
-  --end component;
-
-  --component Processing_unit
-  --  port (Data_in    : in  std_logic_vector (7 downto 0);
-  --        clk        : in  std_logic;
-  --        Ce         : in  std_logic;
-  --        reset      : in  std_logic;
-  --        load_reg1  : in  std_logic;
-  --        load_accu  : in  std_logic;
-  --        load_carry : in  std_logic;
-  --        init_carry : in  std_logic;
-  --        Sel_UAL    : in  std_logic_vector (2 downto 0);
-  --        Data_out   : out std_logic_vector (7 downto 0);
-  --        Carry      : out std_logic);
-  --end component;
-
-  --component RAM_SP_64_8
-  --  port (ADD      : in  std_logic_vector (5 downto 0);
-  --        DATA_IN  : in  std_logic_vector (7 downto 0);
-  --        R_W      : in  std_logic;
-  --        ENABLE   : in  std_logic;
-  --        clk      : in  std_logic;
-  --        Ce       : in  std_logic;
-  --        DATA_OUT : out std_logic_vector (7 downto 0)
-  --        );
-  --end component;
-
   component acces_carte
     port (clk       : in  std_logic;
           reset     : in  std_logic;
