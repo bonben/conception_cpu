@@ -1,0 +1,57 @@
+#fichier de contraintes pour la carte Digilent NEXYS3
+#
+NET "clk100M" LOC = "V10" | IOSTANDARD = "LVCMOS33";
+#TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;
+
+NET "reset"   LOC = "B8"  | IOSTANDARD = "LVCMOS33";# | CLOCK_DEDICATED_ROUTE = FALSE;   
+#
+NET "AN1"  LOC = "P17" | IOSTANDARD = "LVCMOS33";   
+NET "AN2"  LOC = "P18" | IOSTANDARD = "LVCMOS33";   
+NET "AN3"  LOC = "N15" | IOSTANDARD = "LVCMOS33";   
+NET "AN4"  LOC = "N16" | IOSTANDARD = "LVCMOS33";   
+#
+NET "Sevenseg<0>"  LOC = "T17" | IOSTANDARD = "LVCMOS33";   
+NET "Sevenseg<1>"  LOC = "T18" | IOSTANDARD = "LVCMOS33";   
+NET "Sevenseg<2>"  LOC = "U17" | IOSTANDARD = "LVCMOS33";   
+NET "Sevenseg<3>"  LOC = "U18" | IOSTANDARD = "LVCMOS33";   
+NET "Sevenseg<4>"  LOC = "M14" | IOSTANDARD = "LVCMOS33";   
+NET "Sevenseg<5>"  LOC = "N14" | IOSTANDARD = "LVCMOS33";   
+NET "Sevenseg<6>"  LOC = "L14" | IOSTANDARD = "LVCMOS33";   
+NET "Sevenseg<7>"  LOC = "M13" | IOSTANDARD = "LVCMOS33";   
+#
+NET "LED<0>"  LOC = "U16" | IOSTANDARD = "LVCMOS33";   
+NET "LED<1>"  LOC = "V16" | IOSTANDARD = "LVCMOS33";   
+NET "LED<2>"  LOC = "U15" | IOSTANDARD = "LVCMOS33";   
+NET "LED<3>"  LOC = "V15" | IOSTANDARD = "LVCMOS33";   
+NET "LED<4>"  LOC = "M11" | IOSTANDARD = "LVCMOS33";   
+NET "LED<5>"  LOC = "N11" | IOSTANDARD = "LVCMOS33";   
+NET "LED<6>"  LOC = "R11" | IOSTANDARD = "LVCMOS33";   
+NET "LED<7>"  LOC = "T11" | IOSTANDARD = "LVCMOS33";
+#
+#Transfert PC
+#NET "clk_switch" LOC = "T10";
+#
+NET "astb"  LOC = "H1"  | IOSTANDARD = "LVCMOS33";
+NET "dstb"  LOC = "K4"  | IOSTANDARD = "LVCMOS33";
+NET "pwait" LOC = "C2"  | IOSTANDARD = "LVCMOS33";
+NET "pwr"   LOC = "F5"  | IOSTANDARD = "LVCMOS33";
+#SWitch0
+NET valid_saisie LOC = "T10"  | IOSTANDARD = "LVCMOS33";
+#
+NET "pdb<0>" LOC = "E1"  | IOSTANDARD = "LVCMOS33";   
+NET "pdb<1>" LOC = "F4"  | IOSTANDARD = "LVCMOS33";   
+NET "pdb<2>" LOC = "F3"  | IOSTANDARD = "LVCMOS33";   
+NET "pdb<3>" LOC = "D2"  | IOSTANDARD = "LVCMOS33";   
+NET "pdb<4>" LOC = "D1"  | IOSTANDARD = "LVCMOS33";   
+NET "pdb<5>" LOC = "H7"  | IOSTANDARD = "LVCMOS33";   
+NET "pdb<6>" LOC = "G6"  | IOSTANDARD = "LVCMOS33";   
+NET "pdb<7>" LOC = "E4"  | IOSTANDARD = "LVCMOS33";   
+#
+#NET "rgSwt<7>" LOC = "";  # Bank = 2, Signal name = rgSwt7
+#NET "rgSwt<6>" LOC = "";  # Bank = 3, Signal name = rgSwt6
+#NET "rgSwt<5>" LOC = "";  # Bank = 3, Signal name = rgSwt5
+#NET "rgSwt<4>" LOC = "";  # Bank = 3, Signal name = rgSwt4
+#NET "rgSwt<3>" LOC = "";  # Bank = 3, Signal name = rgSwt3
+#NET "rgSwt<2>" LOC = "";  # Bank = 3, Signal name = rgSwt2
+#NET "rgSwt<1>" LOC = "";  # Bank = 3, Signal name = rgSwt1
+#NET "rgSwt<0>" LOC = "";  # Bank = 2, Signal name = rgSwt0
